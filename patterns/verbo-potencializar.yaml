@@ -1,0 +1,20 @@
+id: verbo-potencializar
+grupo: vocabulario
+nome: «Potencializar» e «otimizar resultados»
+por_que: '«Potencializar» e «otimizar» sem objeto técnico viram verbo de slide. Não dizem se o número sobe, desce ou deixa de ser refeito. Num manual, «otimizar a consulta» pode ser o termo do ofício: a heurística não lê esse contexto e conta o verbo mesmo assim.'
+como_corrigir: Diga a mudança. «Potencializar o fechamento» vira «fechar a folha sem hora extra no fim de semana», se isso estiver escrito. Se não estiver, corte o verbo.
+exemplo_antes: Seguimos potencializando o fechamento da folha de novembro e otimizando resultados.
+exemplo_depois: Estamos fechando a folha de novembro.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão verbo-potencializar, escrita para este repositório em 2026-10-29. Tema: fechamento de folha sem hora extra. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bpotencializ\w*\b
+  - (?i)\botimiz\w*\b
+  limite: Não separa «otimizar uma consulta SQL» de «otimizar resultados».

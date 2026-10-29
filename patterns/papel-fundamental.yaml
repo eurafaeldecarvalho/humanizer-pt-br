@@ -1,0 +1,20 @@
+id: papel-fundamental
+grupo: vocabulario
+nome: «Papel fundamental»
+por_que: '«Desempenha um papel fundamental», «papel crucial», «papel essencial». A frase diz que algo importa e não diz o que a coisa faz. Quase sempre dá para substituir pelo verbo real: a controladoria valida, a vírgula separa, o boleto cobra.'
+como_corrigir: Troque «desempenha um papel» pelo verbo. Se não houver verbo no original, a frase pode cair fora.
+exemplo_antes: A controladoria desempenha um papel fundamental na validação do relatório.
+exemplo_depois: A controladoria valida o relatório.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão papel-fundamental, escrita para este repositório em 2026-10-29. Tema: quem valida o relatório. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bpapel (?:fundamental|crucial|essencial|chave)\b
+  - (?i)\bdesempenha(?:m)? um papel\b
+  - (?i)\bdesempenhar um papel\b

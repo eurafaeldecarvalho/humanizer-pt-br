@@ -1,0 +1,4 @@
+leitor_id,data,texto_codigo,julgamento,comentario
+# julgamento: ia | humano | nao_sei
+# texto_codigo: o código do pacote (T01), nunca o rótulo verdadeiro
+# uma linha por texto, por leitor

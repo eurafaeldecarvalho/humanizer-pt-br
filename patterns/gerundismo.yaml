@@ -1,0 +1,19 @@
+id: gerundismo
+grupo: estrutura
+nome: Gerundismo «vou estar enviando»
+por_que: '«Vou estar enviando», «vamos estar verificando»: o futuro composto com gerúndio no lugar de «envio» ou «vejo». É vício de fala no telefone e também um tique de modelo em e-mail de suporte, onde a ação cabe no presente ou no futuro simples.'
+como_corrigir: Use o verbo simples no tempo verdadeiro. «Vou estar enviando o desenho» vira «o desenho vai anexo» ou «envio o desenho hoje», conforme o fato.
+exemplo_antes: Vou estar enviando o desenho ainda hoje e vamos estar verificando o saldo.
+exemplo_depois: O desenho vai ainda hoje. O saldo eu confiro em seguida.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão gerundismo, escrita para este repositório em 2026-10-29. Tema: envio de desenho e conferência de saldo. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\b(?:vou|vamos|vai|vão|irei|iremos) estar \w+ndo\b
+  limite: Não marca «está enviando» nem «estar + gerúndio» sem o verbo de futuro na frente.

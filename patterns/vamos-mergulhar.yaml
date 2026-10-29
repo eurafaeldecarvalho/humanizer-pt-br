@@ -1,0 +1,21 @@
+id: vamos-mergulhar
+grupo: abertura
+nome: «Vamos mergulhar» e «vamos explorar»
+por_que: 'Convite de vídeo transferido para texto: «vamos mergulhar», «mergulhe de cabeça», «vamos explorar». Não diz em quê, nem até onde. Em nota curta, o verbo que importa é o da tarefa (conferir, cortar, enviar).'
+como_corrigir: 'Troque pelo verbo da tarefa. Se o original é uma aula e a pessoa realmente conduz o passo, use o imperativo direto: «abra o arquivo», «sepah a sacola».'
+exemplo_antes: 'Vamos mergulhar nos preparativos: o churrasco é sábado, ao meio-dia, na casa do tio Laerte.'
+exemplo_depois: O churrasco é sábado, ao meio-dia, na casa do tio Laerte.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão vamos-mergulhar, escrita para este repositório em 2026-10-29. Tema: preparo de churrasco de sábado. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bvamos mergulhar\b
+  - (?i)\bmergulhe (?:de cabeça|fundo|nesta|nesse|nisso)\b
+  - (?i)\bvamos desvendar\b
+  - (?i)\bvamos explorar\b

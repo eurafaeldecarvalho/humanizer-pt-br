@@ -1,0 +1,18 @@
+id: encontra-bem
+grupo: abertura
+nome: «Espero que esta mensagem o encontre bem»
+por_que: É decalque de «I hope this message finds you well». Em e-mail brasileiro, a abertura costuma ser «bom dia», o nome da pessoa e o assunto. A fórmula aparece mesmo quando quem escreve e quem lê se falam toda semana.
+como_corrigir: 'Use o cumprimento do registro real: «Ana, bom dia» no trabalho, «oi» no recado. Se o original não pergunta como a pessoa está, não pergunte.'
+exemplo_antes: Espero que esta mensagem a encontre bem. Segue o comprovante do boleto 1022.
+exemplo_depois: Ana, bom dia. Segue o comprovante do boleto 1022.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão encontra-bem, escrita para este repositório em 2026-10-29. Tema: envio de comprovante de boleto. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bencontr[ae] bem\b

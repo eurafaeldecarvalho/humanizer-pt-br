@@ -1,0 +1,19 @@
+id: cola-nesse-sentido
+grupo: conectivo
+nome: «Nesse sentido» e «dito isso»
+por_que: '«Nesse sentido», «dito isso», «diante desse cenário» e «posto isso» ligam duas frases que não chegaram a formar um argumento. O cenário quase nunca foi descrito. Não confundir com «sendo assim» depois de uma conta que acaba de ser feita: esse ficou de fora da heurística de propósito.'
+como_corrigir: Mostre a ligação, se houver («como a ponte está alagada, o prazo de 18 minutos não fecha»). Se não houver, comece a frase seguinte direto.
+exemplo_antes: Diante desse cenário, a entrega do arquivo fica para as 10h. Nesse sentido, seguimos alinhados.
+exemplo_depois: O arquivo sai às 10h.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão cola-nesse-sentido, escrita para este repositório em 2026-10-29. Tema: horário de envio de um arquivo. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\b(?:nesse sentido|dito isso|diante desse cenário|diante deste cenário|posto isso)\b
+  limite: «Sendo assim» e «diante disso», mais comuns em prosa humana, não entram.

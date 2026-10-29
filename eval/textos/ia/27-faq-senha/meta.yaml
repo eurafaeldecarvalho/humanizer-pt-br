@@ -1,0 +1,17 @@
+id: 27-faq-senha
+genero: resposta de suporte
+vitrine: false
+modelo: Grok 4.7
+data: '2026-10-29'
+modelo_reescrita: Grok 4.7
+data_reescrita: '2026-10-29'
+prompt: 'Escreva em português do Brasil um texto fictício do gênero «resposta de suporte». Tema: FAQ fictício do Portal Cidadão de Rio Claro. Use somente estes fatos, sem inventar outro: senha com no mínimo 10 caracteres, uma letra e um número; bloqueio após 5 erros; desbloqueio só no Poupatempo municipal com RG, terça a sexta, 9h às 16h; o cadastro não guarda e-mail, então não há link. Soque de propósito com cacoetes de texto de modelo de linguagem (abertura genérica, conectivo de redação, adjetivo vazio, fechamento de slide), no que couber ao gênero. Não copie texto de terceiros. Pedido feito a Grok 4.7 em 2026-10-29 para este repositório.'
+reescrita: 'Reescreva aplicando src/processo.md e o catálogo em patterns/: preserve os fatos listados, o registro e a opinião; não acrescente dado; tire os cacoetes. Feito por Grok 4.7 em 2026-10-29.'
+preservar:
+- Portal Cidadão de Rio Claro
+- 10 caracteres
+- 5 erros
+- Poupatempo
+- 9h
+- 16h
+cenario: ficticio

@@ -1,0 +1,19 @@
+id: calque-enderecar
+grupo: vocabulario
+nome: Calque «endereçar o problema»
+por_que: «Endereçar um problema» traduz to address. Em português, a gente trata, resolve, responde ou olha o problema. O verbo «endereçar» continua válido para pôr endereço em envelope. A heurística só marca «endereçar» seguido de problema, questão, desafio, ponto ou tema.
+como_corrigir: Use o verbo que diz o que vai ser feito. «Vamos endereçar essa questão» vira «a Marina responde hoje» ou «isso ainda está em aberto», conforme o fato.
+exemplo_antes: O suporte vai endereçar o problema do boleto ainda hoje.
+exemplo_depois: O suporte baixa o boleto ainda hoje.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão calque-enderecar, escrita para este repositório em 2026-10-29. Tema: boleto que o suporte vai baixar. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bendereç\w*\s+(?:o |a |os |as |um |uma |esse |essa |este |esta )?(?:problema|questão|desafio|ponto|tema)s?\b
+  limite: Não marca «endereçar uma carta».

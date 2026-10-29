@@ -1,0 +1,19 @@
+id: outro-ponto-importante
+grupo: conectivo
+nome: «Outro ponto importante»
+por_que: 'Numera ideias sem número e sem hierarquia: «outro ponto importante», «outro aspecto relevante». O leitor não ficou sabendo qual era o primeiro ponto. A frase seguinte é que tem o conteúdo, e ela se sustenta sozinha.'
+como_corrigir: Escreva o conteúdo. Se a ordem importa, numere de verdade ou use «primeiro» e «depois» com os fatos.
+exemplo_antes: Outro ponto importante é a falta de Diego e Ruth na unidade Moema.
+exemplo_depois: Diego e Ruth não estão na unidade Moema.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão outro-ponto-importante, escrita para este repositório em 2026-10-29. Tema: ausência de duas pessoas na unidade. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\boutro ponto (?:importante|relevante|fundamental|crucial|de atenção)\b
+  - (?i)\boutro aspecto (?:importante|relevante|fundamental)\b

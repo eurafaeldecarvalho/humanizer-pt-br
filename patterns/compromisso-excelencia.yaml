@@ -1,0 +1,21 @@
+id: compromisso-excelencia
+grupo: vocabulario
+nome: «Compromisso com a excelência»
+por_que: «Compromisso com a excelência», «excelência operacional» e «busca incessante pela excelência» fecham parágrafo sem critério. Excelência não diz se a folha fecha na sexta ou se o pão sai às 6h. É assinatura de release e de página de vaga.
+como_corrigir: Troque pelo critério que dá para cobrar. Se o original não tem critério, a frase sai.
+exemplo_antes: 'Nosso compromisso com a excelência: consulta de cão e de gato, sem internação.'
+exemplo_depois: A clínica faz consulta de cão e de gato e não faz internação.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão compromisso-excelencia, escrita para este repositório em 2026-10-29. Tema: o que uma clínica veterinária faz e não faz. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bcompromisso com a excelência\b
+  - (?i)\bexcelência operacional\b
+  - (?i)\bqualidade e excelência\b
+  - (?i)\bbusca incessante pela excelência\b

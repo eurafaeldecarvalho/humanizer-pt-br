@@ -1,0 +1,21 @@
+id: gerar-impacto
+grupo: vocabulario
+nome: «Gerar impacto»
+por_que: «Gerar impacto», «impactar positivamente», «impacto significativo» medem nada. Não dizem em quem, em quanto, em qual prazo. Relato de campo e texto de ONG usam «impacto» de modo concreto às vezes; a heurística não lê o complemento e conta a expressão da lista.
+como_corrigir: Troque pela consequência que já está escrita (o prazo de 18 minutos, a fila, o cheiro do balde). Se a consequência não está no texto, corte.
+exemplo_antes: 'A oficina de 40 minutos foi desenhada para gerar impacto positivo: cada pessoa traz um atendimento de outubro que deu errado.'
+exemplo_depois: Na oficina de 40 minutos, cada pessoa traz um atendimento de outubro que deu errado.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão gerar-impacto, escrita para este repositório em 2026-10-29. Tema: oficina interna sobre atendimento. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\b(?:gerar|causar|criar|produzir) impacto\b
+  - (?i)\bimpactar positivamente\b
+  - (?i)\bimpacto (?:positivo|significativo|real|duradouro|mensurável)\b
+  limite: Não julga se o complemento torna «impacto» concreto.

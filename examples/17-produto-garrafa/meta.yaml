@@ -1,0 +1,21 @@
+id: 17-produto-garrafa
+genero: descrição de produto
+vitrine: true
+modelo: Grok 4.7
+data: '2026-10-29'
+modelo_reescrita: Grok 4.7
+data_reescrita: '2026-10-29'
+prompt: 'Escreva em português do Brasil um texto fictício do gênero «descrição de produto». Tema: ficha da garrafa térmica Serra Fria. Use somente estes fatos, sem inventar outro: 500 ml; no teste da oficina a água entrou a 90°C, ambiente a 24°C, terminou a 62°C depois de 8 horas; tampa de rosca que não vaza na mochila; cores verde-musgo e areia; R$ 89,90; aço inox 304; não vai ao micro-ondas. Soque de propósito com cacoetes de texto de modelo de linguagem (abertura genérica, conectivo de redação, adjetivo vazio, fechamento de slide), no que couber ao gênero. Não copie texto de terceiros. Pedido feito a Grok 4.7 em 2026-10-29 para este repositório.'
+reescrita: 'Reescreva aplicando src/processo.md e o catálogo em patterns/: preserve os fatos listados, o registro e a opinião; não acrescente dado; tire os cacoetes. Feito por Grok 4.7 em 2026-10-29.'
+preservar:
+- Serra Fria
+- 500 ml
+- 8 horas
+- 90°C
+- 24°C
+- 62°C
+- verde-musgo
+- areia
+- R$ 89,90
+- inox 304
+cenario: ficticio

@@ -1,0 +1,18 @@
+id: no-que-diz-respeito
+grupo: conectivo
+nome: «No que diz respeito a»
+por_que: «No que diz respeito a», «no tocante a» e «no que tange a» atrasam o tema em quatro ou cinco palavras. É fórmula de ofício que o modelo cola em legenda, e-mail e nota de campo. O tema vem logo depois e quase sempre cabe como sujeito.
+como_corrigir: Faça o tema de sujeito. «No que diz respeito à meta de novembro» vira «a meta de novembro é…».
+exemplo_antes: No que diz respeito à meta de novembro, o valor combinado é R$ 220 mil.
+exemplo_depois: A meta de novembro é R$ 220 mil.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão no-que-diz-respeito, escrita para este repositório em 2026-10-29. Tema: meta de novembro em reais. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\b(?:no que diz respeito|no tocante|no que tange|no que se refere)\s+[aà]\b

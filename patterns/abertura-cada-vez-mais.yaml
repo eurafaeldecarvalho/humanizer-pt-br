@@ -1,0 +1,22 @@
+id: abertura-cada-vez-mais
+grupo: abertura
+nome: Abertura «em um mundo» e «na era digital»
+por_que: «Em um mundo…» e «na era digital» anunciam novidade sem dizer o que mudou. O leitor de 2026 já está nesse mundo; a frase não informa. «Cada vez mais», sozinho, também é fala de gente, então a heurística não conta essa expressão isolada.
+como_corrigir: Diga a mudança concreta, com o objeto e, se existir, a data. Se não houver mudança no texto, comece pelo pedido.
+exemplo_antes: Em um mundo conectado, a padaria do seu Paulo passou a anotar encomenda no celular.
+exemplo_depois: A padaria do seu Paulo agora anota encomenda no celular.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão abertura-cada-vez-mais, escrita para este repositório em 2026-10-29. Tema: padaria que passou a anotar encomenda no celular. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bem um mundo\b
+  - (?i)\bna era digital\b
+  - (?i)\bna era da (?:informação|tecnologia|inteligência artificial)\b
+  - (?i)\bem tempos de (?:mudança|transformação|incerteza)\b
+  limite: 'Não conta «cada vez mais» solto: é frase comum em texto humano.'

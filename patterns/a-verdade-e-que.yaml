@@ -1,0 +1,21 @@
+id: a-verdade-e-que
+grupo: fechamento
+nome: «A verdade é que»
+por_que: «A verdade é que», «a realidade é que» e «a resposta é simples» anunciam franqueza. Às vezes a frase seguinte é franca; muitas vezes é outro chavão. Gente usa «a verdade é que» o tempo todo. A heurística conta a expressão e não decide se o que vem depois é concreto. Por isso, sozinha, ela não separa máquina de pessoa.
+como_corrigir: 'Fique com a frase de depois, se ela tiver fato ou opinião. A opinião fica: não amenize para parecer neutro.'
+exemplo_antes: A verdade é que a conta de luz da padaria não baixou em 2018.
+exemplo_depois: A conta de luz da padaria não baixou em 2018.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão a-verdade-e-que, escrita para este repositório em 2026-10-29. Tema: conta de luz que não baixou. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\ba verdade é que\b
+  - (?i)\ba realidade é que\b
+  - (?i)\ba resposta é simples\b
+  limite: Expressão muito usada por gente. Presença dela não indica autoria.

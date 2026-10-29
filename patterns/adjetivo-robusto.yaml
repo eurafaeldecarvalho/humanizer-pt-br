@@ -1,0 +1,20 @@
+id: adjetivo-robusto
+grupo: vocabulario
+nome: «Robusto» e «abrangente»
+por_que: «Robusto», «abrangente» e «disruptivo» elogiam sem dizer o que a coisa aguenta, cobre ou muda. Colados em relatório, plataforma e processo, não diferenciam nada. «Robusto» para um parafuso que não espanou seria concreto; o modelo quase nunca está falando de parafuso.
+como_corrigir: Troque pelo limite real, se estiver no texto (aguenta 8 horas, cobre 14 notas, não faz internação). Se não houver limite, corte o adjetivo.
+exemplo_antes: 'A garrafa Serra Fria tem corpo robusto e uma proposta abrangente: 500 ml, aço inox 304.'
+exemplo_depois: A garrafa Serra Fria leva 500 ml e é de aço inox 304.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão adjetivo-robusto, escrita para este repositório em 2026-10-29. Tema: descrição de garrafa térmica. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\brobust[oa]s?\b
+  - (?i)\babrangente\b
+  - (?i)\bdisruptiv[oa]s?\b

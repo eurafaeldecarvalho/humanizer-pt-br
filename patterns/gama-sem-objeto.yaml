@@ -1,0 +1,18 @@
+id: gama-sem-objeto
+grupo: vocabulario
+nome: «Uma gama de fatores»
+por_que: «Uma série de fatores», «uma gama de benefícios», «um leque de soluções», «uma infinidade de possibilidades». O substantivo que segue é genérico, então a expressão não lista nada. «Uma série de três e-mails» seria concreta; a heurística só marca a combinação com a lista de palavras vazias.
+como_corrigir: Enumere, ou diga que a causa não está no texto. Não troque «gama» por «leque».
+exemplo_antes: Uma série de fatores explica os 36 itens que ficaram só no celular.
+exemplo_depois: Os 36 itens ficaram só no celular.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão gama-sem-objeto, escrita para este repositório em 2026-10-29. Tema: itens de estoque que não sincronizaram. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\b(?:uma série de|uma gama de|um leque de|uma infinidade de|uma variedade de|um rol de) (?:fatores|aspectos|benefícios|soluções|recursos|possibilidades|elementos|estratégias|ferramentas|iniciativas|vantagens)\b

@@ -1,0 +1,22 @@
+id: sob-medida-vazio
+grupo: vocabulario
+nome: «Sob medida para você» e «experiência única»
+por_que: «Sob medida» é termo certo de marceneiro e de alfaiate. O cacoete é «sob medida para você», «sob medida para suas necessidades», «totalmente personalizado» e «experiência única» em legenda de padaria, aula e app. A heurística não marca «móveis sob medida» nem «roupa sob medida».
+como_corrigir: Diga a medida real (3,2 m, 30 minutos, R$ 40) ou o que a pessoa pode escolher (duas cores). Corte o resto.
+exemplo_antes: A aula experimental dura 30 minutos, custa R$ 40 e é uma experiência única, sob medida para suas necessidades.
+exemplo_depois: A aula experimental dura 30 minutos e custa R$ 40.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão sob-medida-vazio, escrita para este repositório em 2026-10-29. Tema: duração e preço de uma aula de violão. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bsob medida para (?:você|vocês|sua empresa|o seu negócio|suas necessidades|cada cliente)\b
+  - (?i)\bexperiência única\b
+  - (?i)\btotalmente personalizad[oa]s?\b
+  - (?i)\baltamente personalizad[oa]s?\b
+  limite: Não marca «sob medida» de móvel, roupa ou peça.

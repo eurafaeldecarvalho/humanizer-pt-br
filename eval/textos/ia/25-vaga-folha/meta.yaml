@@ -1,0 +1,17 @@
+id: 25-vaga-folha
+genero: e-mail de trabalho
+vitrine: false
+modelo: Grok 4.7
+data: '2026-10-29'
+modelo_reescrita: Grok 4.7
+data_reescrita: '2026-10-29'
+prompt: 'Escreva em português do Brasil um texto fictício do gênero «e-mail de trabalho». Tema: anúncio de vaga de analista de departamento pessoal. Use somente estes fatos, sem inventar outro: meio período, presencial em Goiânia; salário R$ 3.200; já fechou folha no Domínio ou similar; eSocial na prática; não pede inglês; currículo para vagas@cerealistaolho.com.br até 20/11/2026. Soque de propósito com cacoetes de texto de modelo de linguagem (abertura genérica, conectivo de redação, adjetivo vazio, fechamento de slide), no que couber ao gênero. Não copie texto de terceiros. Pedido feito a Grok 4.7 em 2026-10-29 para este repositório.'
+reescrita: 'Reescreva aplicando src/processo.md e o catálogo em patterns/: preserve os fatos listados, o registro e a opinião; não acrescente dado; tire os cacoetes. Feito por Grok 4.7 em 2026-10-29.'
+preservar:
+- Goiânia
+- R$ 3.200
+- Domínio
+- eSocial
+- vagas@cerealistaolho.com.br
+- 20/11/2026
+cenario: ficticio

@@ -1,0 +1,20 @@
+id: calque-alavancar
+grupo: vocabulario
+nome: Calque «alavancar» e «entregar valor»
+por_que: «Alavancar resultados», «entregar valor» e «no final do dia» são decalques de leverage, deliver value e at the end of the day. Em português de trabalho a gente diz aumentar a venda, cumprir o prazo, no fim do expediente. «Alavancar» um objeto físico (uma tampa, com uma alavanca) não é o caso destes exemplos.
+como_corrigir: 'Escreva o verbo do fato: vender, cortar, atrasar, cobrar. «No final do dia» vira «no fim do expediente» só se for horário; se for «afinal», escreva «afinal».'
+exemplo_antes: No final do dia, o plano de novembro precisa alavancar vendas e entregar valor.
+exemplo_depois: O plano de novembro existe para vender mais.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão calque-alavancar, escrita para este repositório em 2026-10-29. Tema: plano comercial sem meta escrita. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\balavanc\w*\b
+  - (?i)\bno final do dia\b
+  - (?i)\bentregar valor\b

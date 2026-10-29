@@ -1,0 +1,19 @@
+id: gerundio-de-intencao
+grupo: estrutura
+nome: Gerúndio de intenção em cadeia
+por_que: «Buscando», «visando», «garantindo», «promovendo», «fomentando» enfileirados na mesma frase. Cada um promete uma ação e não diz quem faz o quê até quando. Um gerúndio só («fico aguardando o arquivo») é fala comum e não entra.
+como_corrigir: 'Troque por oração com sujeito e verbo no tempo certo. «Buscando cruzar os lançamentos e garantindo visão» vira «a Marina cruza os lançamentos hoje», se isso estiver no texto. Se ninguém foi nomeado, não invente o responsável: diga só o que está feito e o que falta.'
+exemplo_antes: O time segue buscando cruzar os lançamentos e garantindo uma visão única da planilha.
+exemplo_depois: O time está cruzando os lançamentos da planilha.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão gerundio-de-intencao, escrita para este repositório em 2026-10-29. Tema: lançamentos de planilha ainda sem cruzamento. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\b(?:buscando|visando|garantindo|promovendo|fortalecendo|fomentando|impulsionando|aprimorando|viabilizando)\b(?:[^.!?\n]{0,90})\b(?:buscando|visando|garantindo|promovendo|fortalecendo|fomentando|impulsionando|aprimorando|viabilizando|otimizando|facilitando|permitindo|contribuindo)\b
+  limite: Exige dois gerúndios dessa lista na mesma frase. Um gerúndio isolado não conta.

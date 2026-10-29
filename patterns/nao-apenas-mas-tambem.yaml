@@ -1,0 +1,19 @@
+id: nao-apenas-mas-tambem
+grupo: estrutura
+nome: «Não apenas… mas também»
+por_que: 'A estrutura «não apenas X, mas também Y» (e «não só X, como também Y») infla duas informações que caberiam numa coordenação simples. O modelo usa a forma mesmo quando X e Y não contrastam: fechar e validar, desconto e convite, armário e capítulo.'
+como_corrigir: Se os dois fatos importam, escreva os dois em sequência. Se o segundo é enfeite, fique só com o primeiro. Não mantenha o contraste se não houver contraste.
+exemplo_antes: O relatório não foi apenas fechado, mas também validado pela controladoria.
+exemplo_depois: O relatório está fechado e a controladoria validou.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão nao-apenas-mas-tambem, escrita para este repositório em 2026-10-29. Tema: relatório fechado e validado. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bnão(?:\s+\w+){0,4}\s+(?:apenas|somente|só)\b[^.]{0,90}?\bmas também\b
+  - (?i)\bnão(?:\s+\w+){0,4}\s+só\b[^.]{0,90}?\bcomo também\b

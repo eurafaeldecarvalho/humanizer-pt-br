@@ -1,0 +1,18 @@
+id: pergunta-retorica
+grupo: abertura
+nome: Pergunta retórica de abertura
+por_que: «Você já parou para pensar…?» abre artigo, legenda e e-mail sem esperar resposta. A pergunta não traz dado; ela segura o fato por uma linha. Em conversa de verdade a pergunta costuma ser específica («o forno de 1998 aguentou o sábado?»).
+como_corrigir: Tire a pergunta e entre no fato. Se a pergunta for de fato uma pergunta (a pessoa precisa responder), deixe e deixe claro o que se espera de volta.
+exemplo_antes: Você já parou para pensar por que a fila do pão dobra às 7h?
+exemplo_depois: A fila do pão dobra às 7h, quando chega o turno da fábrica.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão pergunta-retorica, escrita para este repositório em 2026-10-29. Tema: fila de padaria às 7h. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\b(?:você já|já) (?:parou para pensar|se perguntou|se pegou pensando)\b

@@ -1,0 +1,19 @@
+id: mais-do-que-nunca
+grupo: abertura
+nome: «Mais do que nunca»
+por_que: Aumenta a urgência sem medida. «Mais do que nunca, precisamos alinhar» não diz mais do que quando, nem o que acontece se ninguém alinhar. Gente também usa a expressão; aqui ela entra quando serve de abertura vazia, e a heurística conta a expressão sempre que aparece, com essa limitação.
+como_corrigir: Troque pela consequência prática ou apague. Se o prazo é sexta, escreva sexta.
+exemplo_antes: 'Mais do que nunca, a meta de novembro pede atenção: são R$ 220 mil.'
+exemplo_depois: A meta de novembro é R$ 220 mil.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão mais-do-que-nunca, escrita para este repositório em 2026-10-29. Tema: meta comercial de novembro. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bmais do que nunca\b
+  limite: A expressão também aparece em texto humano. A heurística não distingue abertura vazia de ênfase real.
