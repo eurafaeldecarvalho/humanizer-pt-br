@@ -12,4 +12,3 @@ Cada padrão da v1 tem exemplo de um único modelo. A regra de «dois modelos»,
 
 A avaliação cega descrita em `eval/cego.md` não foi aplicada. Não há N nem data de leitor.
 
-O repositório permanece privado até o dono decidir o contrário.
