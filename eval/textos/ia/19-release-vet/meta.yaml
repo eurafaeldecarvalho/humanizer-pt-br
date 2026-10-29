@@ -1,0 +1,17 @@
+id: 19-release-vet
+genero: release de imprensa
+vitrine: true
+modelo: Grok 4.7
+data: '2026-10-29'
+modelo_reescrita: Grok 4.7
+data_reescrita: '2026-10-29'
+prompt: 'Escreva em português do Brasil um texto fictício do gênero «release de imprensa». Tema: inauguração fictícia da Clínica Vet Largo. Use somente estes fatos, sem inventar outro: abre em 18/11/2026 na rua do Comércio, 75, Pelotas; consulta de cão e gato; sem internação; responsável Dra. Helena Duarte; na primeira semana, banho com 20% de desconto para quem agendar exame de sangue; agendamento na recepção. Soque de propósito com cacoetes de texto de modelo de linguagem (abertura genérica, conectivo de redação, adjetivo vazio, fechamento de slide), no que couber ao gênero. Não copie texto de terceiros. Pedido feito a Grok 4.7 em 2026-10-29 para este repositório.'
+reescrita: 'Reescreva aplicando src/processo.md e o catálogo em patterns/: preserve os fatos listados, o registro e a opinião; não acrescente dado; tire os cacoetes. Feito por Grok 4.7 em 2026-10-29.'
+preservar:
+- Clínica Vet Largo
+- 18/11/2026
+- rua do Comércio, 75
+- Pelotas
+- Dra. Helena Duarte
+- 20%
+cenario: ficticio

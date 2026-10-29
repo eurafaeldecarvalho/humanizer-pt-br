@@ -1,0 +1,72 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checagens:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+
+      - name: Dependências
+        run: python -m pip install -r requirements.txt
+
+      - name: Catálogo
+        run: python scripts/validate_catalog.py
+
+      - name: Skill gerada
+        run: python scripts/build.py --check
+
+      - name: Eval
+        run: python eval/detector.py --check
+
+      - name: Testes
+        run: python eval/test_detector.py
+
+      - name: Pacote
+        run: python scripts/package_skill.py
+
+      - name: Sobreposição com os SKILL.md de inspiração
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/check_overlap.py --check
+
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Lychee
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          fail: true
+          failIfEmpty: false
+          jobSummary: false
+          args: >-
+            --no-progress
+            --max-retries 3
+            --retry-wait-time 5
+            --timeout 20
+            README.md
+            CONTRIBUTING.md
+            docs
+            skills
+            prompt
+            examples/LEIA-ME.md
+            eval/cego.md
+            eval/RESULTS.md
+            eval/textos/humano/FONTES.md
+        env:
+          GITHUB_TOKEN: ${{ github.token }}

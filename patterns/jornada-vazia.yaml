@@ -1,0 +1,21 @@
+id: jornada-vazia
+grupo: vocabulario
+nome: «Jornada» metafórica
+por_que: «Jornada do cliente», «jornada de compra», «jornada de sucesso», «nesta jornada». A palavra saiu do dia de trabalho e virou caminho heroico para qualquer processo. «Jornada de trabalho» no sentido da CLT não está na lista.
+como_corrigir: 'Diga o processo pelo nome: a compra, o primeiro mês na função, o fechamento da folha. Se for a jornada da CLT, deixe.'
+exemplo_antes: A promoção abre uma jornada de sucesso na coordenação.
+exemplo_depois: A promoção é para a coordenação do DP. O time tem 6 pessoas.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão jornada-vazia, escrita para este repositório em 2026-10-29. Tema: promoção para coordenação de DP. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bjornada (?:do cliente|da marca|do usuário|de compra|de transformação|de aprendizado|de aprendizagem|do herói|de sucesso|de inovação|de transparência)\b
+  - (?i)\bnesta jornada\b
+  - (?i)\bao longo (?:desta|dessa) jornada\b
+  limite: Não marca «jornada de trabalho».

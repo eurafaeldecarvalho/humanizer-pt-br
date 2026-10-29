@@ -1,0 +1,19 @@
+id: abordagem-holistica
+grupo: vocabulario
+nome: «Abordagem holística»
+por_que: '«Holístico», «visão holística» e «visão 360» prometem que nada ficou de fora. Em geral é o contrário: o texto não listou as partes. A palavra chegou ao português corporativo por slide traduzido e o modelo a usa fora de qualquer método.'
+como_corrigir: Liste as partes, ou diga o limite («só dígito e máscara, sem consulta à Receita»). Não troque «holística» por «integrada».
+exemplo_antes: O fechamento pede uma abordagem holística e uma visão 360 da planilha.
+exemplo_depois: O fechamento usa a planilha inteira.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão abordagem-holistica, escrita para este repositório em 2026-10-29. Tema: o que entra no fechamento de uma planilha. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bholístic[oa]s?\b
+  - (?i)\bvisão 360\b

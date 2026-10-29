@@ -1,0 +1,20 @@
+id: ponta-a-ponta
+grupo: vocabulario
+nome: «Ponta a ponta» e «solução completa»
+por_que: '«Solução completa», «plataforma completa» e «ponta a ponta» dizem que o produto faz tudo. Quase nunca faz. O leitor precisa da lista curta: o que entra, o que não entra (não consulta a Receita, não cifra, não tem TV).'
+como_corrigir: Liste o que o produto faz e, se o original diz, o que ele não faz. Corte «completa» se a lista já existe.
+exemplo_antes: 'A biblioteca é uma solução completa, ponta a ponta, para CPF: confere o dígito, formata e não consulta a Receita.'
+exemplo_depois: A biblioteca confere o dígito do CPF e formata o número. Não consulta a Receita.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão ponta-a-ponta, escrita para este repositório em 2026-10-29. Tema: biblioteca que só confere dígito de CPF. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bponta a ponta\b
+  - (?i)\bsolução (?:completa|integrada|360)\b
+  - (?i)\bplataforma (?:completa|integrada)\b

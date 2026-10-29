@@ -1,0 +1,19 @@
+id: vale-ressaltar
+grupo: conectivo
+nome: «Vale ressaltar»
+por_que: «Vale ressaltar», «vale destacar», «vale lembrar», «vale pontuar» anunciam que a próxima frase é importante, em vez de escrever a frase importante. Empilhado no começo do parágrafo, vira muleta. Um «vale lembrar» solto num recado de síndico às vezes é fala natural; a heurística não faz essa distinção e conta a muleta sempre.
+como_corrigir: 'Apague o anúncio e deixe a informação. Se ela for realmente um aviso, o imperativo basta: «enche a caixa na quarta».'
+exemplo_antes: Vale ressaltar que o relatório foi validado pela controladoria em 28/10/2026.
+exemplo_depois: A controladoria validou o relatório em 28/10/2026.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão vale-ressaltar, escrita para este repositório em 2026-10-29. Tema: validação de relatório pela controladoria. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bvale (?:a pena )?(?:ressaltar|destacar|mencionar|lembrar|pontuar)\b
+  limite: Conta também o «vale lembrar» de recado cotidiano, que nem sempre é cacoete.

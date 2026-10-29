@@ -1,0 +1,21 @@
+id: desde-os-primordios
+grupo: abertura
+nome: «Desde os primórdios»
+por_que: 'Puxa a história da humanidade para introduzir um assunto pequeno: um festival, um dígito verificador, um app. O salto não explica o fato de hoje. Também entra «desde a aurora» e «ao longo da história da humanidade».'
+como_corrigir: Comece na data e no lugar do fato. Se a história antiga está no original e é específica (um forno de 1998, uma lei de um ano), cite esse marco, não «os primórdios».
+exemplo_antes: Desde os primórdios da informática, dígitos verificadores evitam erro de digitação.
+exemplo_depois: O dígito verificador pega erro de digitação no CPF.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão desde-os-primordios, escrita para este repositório em 2026-10-29. Tema: dígito verificador de CPF. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bdesde os primórdios\b
+  - (?i)\bdesde tempos imemoriais\b
+  - (?i)\bdesde a aurora\b
+  - (?i)\bao longo da história da humanidade\b

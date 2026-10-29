@@ -1,0 +1,19 @@
+id: como-mencionado-acima
+grupo: conectivo
+nome: «Como mencionado acima»
+por_que: O modelo finge que já explicou. «Como mencionado anteriormente» aponta para um parágrafo que não disse aquilo, ou que disse de passagem. Em texto curto, o leitor não precisa ser mandado de volta.
+como_corrigir: Repita o fato em meia linha, se ele ainda faz falta. Se não faz, apague a remissão.
+exemplo_antes: Como mencionado acima, o desbloqueio é no balcão, com RG.
+exemplo_depois: O desbloqueio é no balcão, com RG.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão como-mencionado-acima, escrita para este repositório em 2026-10-29. Tema: desbloqueio de senha no balcão. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bcomo (?:mencionado|citado|dito|exposto|visto) (?:anteriormente|acima|previamente)\b
+  - (?i)\bconforme (?:mencionado|exposto|citado) (?:anteriormente|acima)\b

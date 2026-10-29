@@ -1,0 +1,18 @@
+id: travessao-parentetico
+grupo: estrutura
+nome: Travessão no meio da frase
+por_que: 'O travessão de diálogo, no começo da réplica, é pontuação de prosa. O cacoete é outro: dois apartes no meio da frase, no lugar de vírgula ou de parêntese, muitas vezes com um elogio dentro («o relatório — documento robusto — saiu»). A heurística conta pares (abre e fecha) e só dispara a partir do segundo par, para não marcar um aparte único nem a fala «— Bonita canoa!».'
+como_corrigir: Se o aparte é um fato, vire frase. Se é elogio, corte. Um travessão só, quando a pessoa falaria assim, pode ficar.
+exemplo_antes: O relatório — versão interna — saiu ontem, e as pendências — todas de Barretos — continuam na mesa do Caio.
+exemplo_depois: O relatório interno saiu ontem. As pendências de Barretos continuam na mesa do Caio.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão travessao-parentetico, escrita para este repositório em 2026-10-29. Tema: relatório interno e pendências de Barretos. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: travessao
+  minimo: 2
+  limite: Conta pares de travessão com aparte no meio, sem ! ou ? dentro do par. Dispara a partir de dois pares. Um aparte só não conta. Fala de diálogo não conta.

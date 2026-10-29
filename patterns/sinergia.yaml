@@ -1,0 +1,18 @@
+id: sinergia
+grupo: vocabulario
+nome: «Sinergia»
+por_que: «Sinergia» ocupa o lugar de «as duas pessoas vão se falar» ou «o dado sai de um sistema e entra no outro». Sozinha, não diz quem combina o quê. É palavra de slide que o modelo deixa cair em vaga, e-mail e legenda.
+como_corrigir: 'Escreva a combinação real. Se o original não diz como as partes se encontram, não invente o rito: diga só quem falta ou o que falta.'
+exemplo_antes: O fechamento da folha depende da sinergia entre o DP e o compras.
+exemplo_depois: O fechamento da folha depende do DP e do compras.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão sinergia, escrita para este repositório em 2026-10-29. Tema: dado que o compras precisa mandar ao DP. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bsinergia(?:s)?\b

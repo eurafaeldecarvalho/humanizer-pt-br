@@ -1,0 +1,24 @@
+id: fechamento-motivacional
+grupo: fechamento
+nome: Fechamento motivacional
+por_que: «Juntos, podemos», «o futuro é promissor», «agora é a hora», «o melhor ainda está por vir», «vamos nessa». Fecha release, legenda e e-mail com aplauso. Não diz o que a pessoa faz amanhã. Não é a mesma coisa que um «obrigado» ou um «até sábado».
+como_corrigir: Feche no próximo passo, se houver (confirmar até quarta, encher a caixa, mandar o currículo). Se o original é só comemoração, um «até sexta, no pátio» basta.
+exemplo_antes: O bolo é sexta, no pátio, depois das 18h. Juntos, podemos mais. O futuro é promissor. Vamos nessa.
+exemplo_depois: O bolo é sexta, no pátio, depois das 18h.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão fechamento-motivacional, escrita para este repositório em 2026-10-29. Tema: convite objetivo para uma sexta-feira. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bo futuro (?:é|será|sera) promissor\b
+  - (?i)\bjuntos,? podemos\b
+  - (?i)\bagora é (?:a hora|o momento)\b
+  - (?i)\brumo a um futuro\b
+  - (?i)\bo melhor ainda está por vir\b
+  - (?i)\bvamos juntos\b
+  - (?i)\bvamos nessa\b

@@ -1,0 +1,21 @@
+id: ecossistema-metafora
+grupo: vocabulario
+nome: «Ecossistema» fora da biologia
+por_que: '«Ecossistema digital», «ecossistema de inovação», «todo o ecossistema» incham um conjunto de coisas que têm nome: o app e o suporte, a feira e o pix, o plano e a instalação. Ecossistema marinho ou de floresta não entra na lista.'
+como_corrigir: Nomeie as partes. Se são duas, escreva as duas.
+exemplo_antes: Nosso ecossistema digital junta o plano de fibra e o suporte por WhatsApp.
+exemplo_depois: O plano é a fibra. O suporte é por WhatsApp.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão ecossistema-metafora, escrita para este repositório em 2026-10-29. Tema: plano de internet e canal de suporte. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\becossistema (?:digital|de inovação|de negócios|integrado|completo|vibrante)\b
+  - (?i)\btodo o ecossistema\b
+  - (?i)\bnosso ecossistema\b
+  limite: Não marca «ecossistema» de biologia ou geografia.

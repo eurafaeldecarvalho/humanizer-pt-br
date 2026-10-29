@@ -1,0 +1,18 @@
+id: de-forma-eficaz
+grupo: vocabulario
+nome: «De forma eficaz»
+por_que: «De forma eficaz», «de maneira significativa», «de forma assertiva», «de forma estratégica». O advérbio não diz como. Esconde a falta do método. «De forma» seguida de adjetivo de slide é moldura; «de forma alguma» não entra na lista.
+como_corrigir: Descreva o método em uma frase, se ele estiver no texto. Se não estiver, apague o advérbio e deixe o verbo.
+exemplo_antes: O time vai cruzar as notas de forma eficaz e de maneira estratégica.
+exemplo_depois: O time vai cruzar as notas.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão de-forma-eficaz, escrita para este repositório em 2026-10-29. Tema: cruzamento de notas fiscais. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bde (?:forma|maneira) (?:eficaz|eficiente|significativa|assertiva|estratégica|proativa|transparente|inovadora|abrangente|ágil|rápida)\b

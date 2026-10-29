@@ -1,0 +1,19 @@
+id: desafios-e-oportunidades
+grupo: fechamento
+nome: «Desafios e oportunidades»
+por_que: O par vem junto, quase sempre nessa ordem, e não lista nem o desafio nem a oportunidade. Serve de fim de parágrafo quando o modelo não tem o fato. Um texto que diz «o desafio é a chuva das 16h» não usa o par e não deve ser reescrito para evitá-lo.
+como_corrigir: 'Separe: qual é o problema, qual é a chance, se os dois estiverem no texto. Se só a expressão estiver, corte.'
+exemplo_antes: 'O trimestre traz desafios e oportunidades: faltam Diego e Ruth, e a meta é R$ 220 mil.'
+exemplo_depois: No trimestre faltam Diego e Ruth, e a meta é R$ 220 mil.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão desafios-e-oportunidades, escrita para este repositório em 2026-10-29. Tema: meta comercial e duas ausências. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bdesafios e oportunidades\b
+  - (?i)\boportunidades e desafios\b

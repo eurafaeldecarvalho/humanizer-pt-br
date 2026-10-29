@@ -1,0 +1,20 @@
+id: 02-email-reuniao
+genero: e-mail de trabalho
+vitrine: false
+modelo: Grok 4.7
+data: '2026-10-29'
+modelo_reescrita: Grok 4.7
+data_reescrita: '2026-10-29'
+prompt: 'Escreva em português do Brasil um texto fictício do gênero «e-mail de trabalho». Tema: Helena Vasques convoca o comercial para falar da meta de novembro. Use somente estes fatos, sem inventar outro: reunião em 04/11/2026 às 15h30 na sala 3 da unidade Moema; meta de R$ 220 mil; faltam Diego e Ruth; confirmar até 01/11/2026. Soque de propósito com cacoetes de texto de modelo de linguagem (abertura genérica, conectivo de redação, adjetivo vazio, fechamento de slide), no que couber ao gênero. Não copie texto de terceiros. Pedido feito a Grok 4.7 em 2026-10-29 para este repositório.'
+reescrita: 'Reescreva aplicando src/processo.md e o catálogo em patterns/: preserve os fatos listados, o registro e a opinião; não acrescente dado; tire os cacoetes. Feito por Grok 4.7 em 2026-10-29.'
+preservar:
+- Helena Vasques
+- 04/11/2026
+- 15h30
+- sala 3
+- Moema
+- R$ 220 mil
+- Diego
+- Ruth
+- 01/11/2026
+cenario: ficticio

@@ -1,0 +1,20 @@
+id: emoji-de-modelo
+grupo: formato
+nome: Fileira de emoji de modelo
+por_que: Foguete, estrela, lâmpada, check, alvo e gráfico no meio de e-mail, release ou README. Um emoji em legenda ou no Zap pode ser de gente; a fileira decorativa, repetida como se fosse bullet, é moldura de modelo. A heurística conta um conjunto fechado e só dispara com dois ou mais. Sorriso e risada ficam de fora.
+como_corrigir: Em texto formal, tire. Em legenda, se sobrar um e combinar com quem fala, pode ficar um. Não substitua emoji por adjetivo animado.
+exemplo_antes: A clínica abre em novembro. 🚀✨ Agende na recepção.
+exemplo_depois: A clínica abre em novembro. O agendamento é na recepção.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão emoji-de-modelo, escrita para este repositório em 2026-10-29. Tema: aviso de abertura de clínica. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex_minimo
+  padroes:
+  - 🚀|✨|💡|🔥|🌟|✅|👉|💪|🎯|📈
+  minimo: 2
+  limite: Não conta emoji fora dessa lista. Um emoji só, mesmo da lista, não conta.

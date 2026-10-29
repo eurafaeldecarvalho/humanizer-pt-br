@@ -1,0 +1,18 @@
+id: voce-sabia-que
+grupo: abertura
+nome: «Você sabia que»
+por_que: 'Abre legenda e texto de produto com uma curiosidade que em geral não é curiosa: é o próprio recado, disfarçado de quiz. Quem lê a legenda da padaria já quer o preço e o horário.'
+como_corrigir: Diga o recado. Se houver uma curiosidade real e específica no original, deixe o fato sem o prefácio.
+exemplo_antes: Você sabia que o pão francês fica a R$ 1,25 até sábado?
+exemplo_depois: O pão francês fica a R$ 1,25 até sábado.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão voce-sabia-que, escrita para este repositório em 2026-10-29. Tema: preço do pão francês até sábado. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bvocê sabia que\b

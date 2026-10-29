@@ -1,0 +1,20 @@
+id: conectivo-empilhado
+grupo: conectivo
+nome: «Além disso» e «ademais» empilhados
+por_que: Um «além disso» é fala normal. Dois ou mais, somados a «ademais» e «outrossim» no mesmo texto curto, são o modelo costurando parágrafos que não têm ligação própria. «Outrossim» em e-mail de 2026 quase nunca é escolha de quem escreve no trabalho.
+como_corrigir: Una os fatos na ordem em que acontecem, sem cola. Se os fatos não se ligam, faça duas frases curtas ou dois parágrafos, sem conectivo de redação.
+exemplo_antes: O café da sessão está incluso. Além disso, a loja fica na rua Halfeld. Ademais, o clube é na quinta.
+exemplo_depois: O café da sessão está incluso. A loja fica na rua Halfeld. O clube é na quinta.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão conectivo-empilhado, escrita para este repositório em 2026-10-29. Tema: recado de livraria com três fatos soltos. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex_minimo
+  padroes:
+  - (?i)(?:^|(?<=[.!?]\s)|(?<=\n))(?:além disso|ademais|outrossim|além do mais)\b
+  minimo: 2
+  limite: Um conectivo só não conta. A heurística dispara a partir de duas ocorrências.

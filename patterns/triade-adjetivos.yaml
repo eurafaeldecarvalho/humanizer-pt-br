@@ -1,0 +1,19 @@
+id: triade-adjetivos
+grupo: estrutura
+nome: Tríade de adjetivos vazios
+por_que: 'Três adjetivos em fila, tirados de um estoque pequeno: robusto, abrangente, estratégico, inovador, escalável, integrado. A tríade não diferencia um relatório de uma garrafa. Três substantivos concretos («fica, conserto, doação») não entram na heurística.'
+como_corrigir: Troque a tríade pelo traço que distingue a coisa, ou corte. «Relatório robusto, abrangente e estratégico» vira «relatório do 3º trimestre», se é isso que ele é.
+exemplo_antes: O relatório do 3º trimestre entregue é robusto, abrangente e estratégico.
+exemplo_depois: O relatório entregue é o do 3º trimestre.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão triade-adjetivos, escrita para este repositório em 2026-10-29. Tema: qualificação vazia de um relatório. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\b(?:robust[oa]|inovador(?:a)?|abrangente|escalável|dinâmic[oa]|transparente|integrad[oa]|sustentável|ágil|eficiente|estratégic[oa]|proativ[oa]),\s+(?:robust[oa]|inovador(?:a)?|abrangente|escalável|dinâmic[oa]|transparente|integrad[oa]|sustentável|ágil|eficiente|estratégic[oa]|proativ[oa]) e (?:robust[oa]|inovador(?:a)?|abrangente|escalável|dinâmic[oa]|transparente|integrad[oa]|sustentável|ágil|eficiente|estratégic[oa]|proativ[oa])\b
+  limite: Só reconhece uma lista fechada de adjetivos. «Café, pão e manteiga» não conta.

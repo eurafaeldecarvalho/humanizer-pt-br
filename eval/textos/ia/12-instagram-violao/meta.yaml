@@ -1,0 +1,17 @@
+id: 12-instagram-violao
+genero: legenda de Instagram
+vitrine: false
+modelo: Grok 4.7
+data: '2026-10-29'
+modelo_reescrita: Grok 4.7
+data_reescrita: '2026-10-29'
+prompt: 'Escreva em português do Brasil um texto fictício do gênero «legenda de Instagram». Tema: aula experimental de violão com o professor Tadeu. Use somente estes fatos, sem inventar outro: sábado 08/11/2026 às 9h; sobreloja da papelaria no centro de Juiz de Fora; R$ 40; 30 minutos; dois violões de empréstimo. Soque de propósito com cacoetes de texto de modelo de linguagem (abertura genérica, conectivo de redação, adjetivo vazio, fechamento de slide), no que couber ao gênero. Não copie texto de terceiros. Pedido feito a Grok 4.7 em 2026-10-29 para este repositório.'
+reescrita: 'Reescreva aplicando src/processo.md e o catálogo em patterns/: preserve os fatos listados, o registro e a opinião; não acrescente dado; tire os cacoetes. Feito por Grok 4.7 em 2026-10-29.'
+preservar:
+- 08/11/2026
+- 9h
+- Tadeu
+- Juiz de Fora
+- R$ 40
+- 30 minutos
+cenario: ficticio

@@ -1,0 +1,21 @@
+id: abertura-mundo-atual
+grupo: abertura
+nome: Abertura «no mundo atual»
+por_que: 'O texto começa com um panorama que serve para qualquer assunto: «no mundo atual», «no cenário atual», «no mundo de hoje». Não diz cidade, data nem quem fez o quê. O fato, que era a razão do texto, fica para o segundo período.'
+como_corrigir: Apague a moldura e abra com o fato. Se o contexto importa e já está no texto, troque o chavão pelo nome do lugar e pela data. Não invente cenário para justificar a abertura.
+exemplo_antes: No mundo atual, a planilha de vendas do interior virou prioridade da área.
+exemplo_depois: A planilha de vendas do interior é a prioridade da área nesta semana.
+origem:
+  modelo: Grok 4.7
+  data: '2026-10-29'
+  prompt: 'Frase de exemplo do padrão abertura-mundo-atual, escrita para este repositório em 2026-10-29. Tema: prioridade interna de uma planilha de vendas. Pedido: uma frase com cara de texto de modelo de linguagem em português do Brasil. Não copiar texto de terceiros.'
+  reescrita: Reescrita no mesmo dia pelo mesmo modelo, aplicando src/processo.md e o catálogo.
+  modelos_observados:
+  - Grok 4.7
+heuristica:
+  tipo: regex
+  padroes:
+  - (?i)\bno (?:mundo|cenário|contexto) atual\b
+  - (?i)\bno atual (?:mundo|cenário|contexto)\b
+  - (?i)\bno mundo de hoje\b
+  - (?i)\bno cenário de hoje\b
